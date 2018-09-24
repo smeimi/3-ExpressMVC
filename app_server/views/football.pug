@@ -1,8 +1,8 @@
 extends layout
 
 block content
-  h1= 'FIFA World Cup champions since 1990'
+  h1= 'Popular movies by their release year'
   ul
     each winner in winners
-      li= winner.year + ': ' + winner.team
+      li= winner.year + ': ' + winner.movie
 
