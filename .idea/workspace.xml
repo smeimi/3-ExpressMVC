@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a61576d9-4b01-4721-85b4-cd9108900f58" name="Default Changelist" comment="" />
+    <list default="true" id="a61576d9-4b01-4721-85b4-cd9108900f58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -78,12 +80,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1314" />
+          <entry key="js" value="1382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1314" />
+          <entry key="JavaScript" value="1382" />
         </counts>
       </usages-collector>
     </session>
@@ -129,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="323">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -218,8 +220,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app_api/models/appSchemas.js" />
         <option value="$PROJECT_DIR$/app_api/routes/indexApi.js" />
-        <option value="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" />
         <option value="$PROJECT_DIR$/app_api/controllers/ctrlApiDirectors.js" />
+        <option value="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" />
       </list>
     </option>
   </component>
@@ -385,15 +387,15 @@
       <workItem from="1537781394992" duration="10412000" />
       <workItem from="1538394038417" duration="8336000" />
       <workItem from="1538411233020" duration="1121000" />
-      <workItem from="1541067328761" duration="10250000" />
+      <workItem from="1541067328761" duration="10507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36567000" />
+    <option name="totallyTimeSpent" value="36824000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="776" height="830" extended-state="1" />
+    <frame x="-6" y="0" width="776" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23139377" />
@@ -558,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_api/routes/indexApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_api/models/moviesdatabase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -579,10 +574,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_api/routes/indexApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="323">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
         </state>
       </provider>
     </entry>
