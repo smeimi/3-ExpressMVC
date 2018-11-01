@@ -11,9 +11,6 @@ const winnerList = function (req, res) {
             res.status(200).json(winners);
         }
     });
-    res
-        .status(200)
-        .json({"year" : "director"});
 };
 
 const addWinner = function (req, res) {
