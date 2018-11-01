@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a61576d9-4b01-4721-85b4-cd9108900f58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app_api/controllers/ctrlApiDirectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/controllers/ctrlApiDirectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" afterDir="false" />
-    </list>
+    <list default="true" id="a61576d9-4b01-4721-85b4-cd9108900f58" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -129,7 +126,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -138,7 +135,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_api/controllers/ctrlApiDirectors.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -242,7 +239,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="width" value="970" />
     <option name="height" value="1038" />
@@ -388,15 +385,15 @@
       <workItem from="1537781394992" duration="10412000" />
       <workItem from="1538394038417" duration="8336000" />
       <workItem from="1538411233020" duration="1121000" />
-      <workItem from="1541067328761" duration="9381000" />
+      <workItem from="1541067328761" duration="10250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35698000" />
+    <option name="totallyTimeSpent" value="36567000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="776" height="830" extended-state="0" />
+    <frame x="-6" y="0" width="776" height="830" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23139377" />
@@ -575,17 +572,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_api/controllers/ctrlApiDirectors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
