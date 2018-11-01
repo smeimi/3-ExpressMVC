@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a61576d9-4b01-4721-85b4-cd9108900f58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/controllers/ctrlApiMovies.js" afterDir="false" />
-    </list>
+    <list default="true" id="a61576d9-4b01-4721-85b4-cd9108900f58" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -387,15 +385,15 @@
       <workItem from="1537781394992" duration="10412000" />
       <workItem from="1538394038417" duration="8336000" />
       <workItem from="1538411233020" duration="1121000" />
-      <workItem from="1541067328761" duration="10507000" />
+      <workItem from="1541067328761" duration="10946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36824000" />
+    <option name="totallyTimeSpent" value="37263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="776" height="830" extended-state="0" />
+    <frame x="-6" y="0" width="776" height="830" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23139377" />
