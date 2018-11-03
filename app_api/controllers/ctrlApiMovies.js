@@ -14,9 +14,15 @@
     };
 
 const addWinner = function (req, res) {
-    res
-        .status(201)
-        .json({"Add winner movie": "Work in progress"});
+    moviesModel.create(req.body, function(err, newWinner) {
+            if (err) {
+                res.status(400).json(err);
+            }
+            else {
+                res.status(201).json(newWinner);
+            }
+        }
+    );
 };
 
 module.exports = {
