@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const directorsModel = mongoose.model('directorsWinner');
+const directorsModel = mongoose.model('directorsModel');
 
 const winnerList = function (req, res) {
 

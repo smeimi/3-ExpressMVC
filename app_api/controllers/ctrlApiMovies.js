@@ -1,5 +1,5 @@
     const mongoose = require('mongoose');
-    const moviesModel = mongoose.model('moviesWinner');
+    const moviesModel = mongoose.model('moviesModel');
 
     const winnerList = function (req, res) {
 
