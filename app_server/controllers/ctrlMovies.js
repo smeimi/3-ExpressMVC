@@ -1,18 +1,34 @@
+const request = require('request');
+const apiURL = require('./apiURLs');
 
-const winnerlist = function(req, res){
-    res.render('movies',{
-        winners:
-        [
-            {year:'1990', movie:'Misery'},
-            {year:'1994', movie:'Lion King'},
-            {year:'1998', movie:'Deep Impact'},
-            {year:'2002', movie:'8 Mile'},
-            {year:'2006', movie:'Silent Hill'},
-            {year:'2010', movie:'Inception'},
-            {year:'2014', movie:'Interstellar'},
-            {year:'2018', movie:'Venom'}
-        ]});
+const winnerList = function (req, res) {
+
+    const path = '/api/movies';
+    const requestOptions = {
+        url : apiURL.server + path,
+        method : 'GET',
+        json : {},
+        qs : {}
+    };
+
+    request(
+        requestOptions,
+        function (err, response, body) {
+            if (err){
+                res.render('error', {message: err.message});
+            } else if (response.statusCode !== 200){
+                res.render('error', {message: 'Error Accessing API: ' + response.statusMessage + " ("+ response.statusCode + ")" });
+            } else if (!(body instanceof Array)) {
+                res.render('error', {message: 'Unexpected response data'});
+            } else if (!body.length) {
+                res.render('error', {message: 'No documents in collection'});
+            } else {
+                res.render('movies', {winners: body});
+            }
+        }
+    );
 };
+
 module.exports = {
-    winnerlist
+    winnerList
 };

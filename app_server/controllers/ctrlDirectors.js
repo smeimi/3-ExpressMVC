@@ -1,19 +1,34 @@
+const request = require('request');
+const apiURL = require('./apiURLs');
 
-const winnerlist = function(req, res){
-    res.render('directors',{
-        winners:
-        [
-            {year:'1990', director:'Rob Reiner', movie: 'Misery'},
-            {year:'1994', director:'Ron Minkoff', movie: 'Lion King'},
-            {year:'1998', director:'Mimi Leder', movie: 'Deep Impact'},
-            {year:'2002', director:'Curtis Hanson', movie: '8 Mile'},
-            {year:'2006', director:'Christophe Gans', movie: 'Silent Hill'},
-            {year:'2010', director:'Christopher Nolan', movie: 'Inception'},
-            {year:'2014', director:'Christopher Nolan', movie: 'Interstellar'},
-            {year:'2018', director:'Ruben Fleischer', movie: 'Venom'}
-        ]});
+const winnerList = function (req, res) {
+
+    const path = '/api/directors';
+    const requestOptions = {
+        url : apiURL.server + path,
+        method : 'GET',
+        json : {},
+        qs : {}
+    };
+
+    request(
+        requestOptions,
+        function (err, response, body) {
+            if (err){
+                res.render('error', {message: err.message});
+            } else if (response.statusCode !== 200){
+                res.render('error', {message: 'Error Accessing API: ' + response.statusMessage + " ("+ response.statusCode + ")" });
+            } else if (!(body instanceof Array)) {
+                res.render('error', {message: 'Unexpected response data'});
+            } else if (!body.length) {
+                res.render('error', {message: 'No documents in collection'});
+            } else {
+                res.render('movies', {winners: body});
+            }
+        }
+    );
 };
 
 module.exports = {
-    winnerlist
+    winnerList
 };
