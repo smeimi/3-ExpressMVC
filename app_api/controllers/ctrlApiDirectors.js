@@ -1,31 +1,35 @@
-const mongoose = require('mongoose');
-const directorsModel = mongoose.model('directorsModel');
+const request = require('request');
+const apiURL = require('./apiURLs');
 
 const winnerList = function (req, res) {
 
-    directorsModel.find({},function(err, winners){
-        if (err){
-            res.status(404).json(err);
-        }
-        else{
-            res.status(200).json(winners);
-        }
-    });
-};
+    const path = '/api/directors';
+    const requestOptions = {
+        url : apiURL.server + path,
+        method : 'GET',
+        json : {},
+        qs : {}
+    };
 
-const addWinner = function (req, res) {
-    directorsModel.create(req.body, function(err, newWinner){
+    request(
+        requestOptions,
+        function (err, response, body) {
             if (err){
-                res.status(400).json(err);
-            }
-            else{
-                res.status(201).json(newWinner);
+                res.render('error', {message: err.message});
+            } else if (response.statusCode !== 200){
+                res.render('error', {message: 'Error Accessing API: ' + response.statusMessage + " ("+ response.statusCode + ")" });
+            } else if (!(body instanceof Array)) {
+                res.render('error', {message: 'Unexpected response data'});
+            } else
+            if (!body.length) {
+                res.render('error', {message: 'No documents in collection'});
+            } else {
+                res.render('movies', {winners: body});
             }
         }
     );
-   // res.status(201).json({"Add winner" : "Work in progress"});
 };
+
 module.exports = {
-    winnerList,
-    addWinner
+    winnerList
 };
