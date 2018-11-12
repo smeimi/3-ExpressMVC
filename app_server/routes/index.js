@@ -11,4 +11,9 @@ router.get('/', ctrlMain.index);  // Home page
 router.get('/movies', ctrlMovies.winnerList);
 router.get('/directors', ctrlDirectors.winnerList);
 
+router
+    .route('/movies/add')
+    .get(ctrlMovies.showForm)
+    .post(ctrlMovies.addData);
+
 module.exports = router;

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .row
+        h4 New movie
+    form(action="", method="post")
+        .form-group.row
+            label Year
+              input.form-control(name="year")
+        .form-group.row
+            label movie
+              input.form-control(name="movie")
+        .form-group.row
+            button.btn-primary Add
